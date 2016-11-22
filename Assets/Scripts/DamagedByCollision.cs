@@ -5,6 +5,7 @@ public class DamagedByCollision : MonoBehaviour {
 
     // Use this for initialization
     int health = 1;
+    int lol = 2;
     void OnCollisionEnter2D()
     {
         Debug.Log("Collision!");
