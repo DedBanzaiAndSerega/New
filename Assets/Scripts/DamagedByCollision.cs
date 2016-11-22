@@ -4,6 +4,7 @@ using System.Collections;
 public class DamagedByCollision : MonoBehaviour {
 
     // Use this for initialization
+    int ololo;
     int health = 1;
     void OnCollisionEnter2D()
     {
