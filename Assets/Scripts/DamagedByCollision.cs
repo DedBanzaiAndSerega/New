@@ -4,8 +4,8 @@ using System.Collections;
 public class DamagedByCollision : MonoBehaviour {
 
     // Use this for initialization
+    // delete health
     int health = 1;
-    int HP = 2;
     void OnCollisionEnter2D()
     {
         Debug.Log("Collision!");
