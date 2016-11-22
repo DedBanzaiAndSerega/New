@@ -6,6 +6,23 @@ public class DamagedByCollision : MonoBehaviour {
     // Use this for initialization
     // delete health
     // hello world
+    /*
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     */
     int health = 1;
     void OnCollisionEnter2D()
     {
