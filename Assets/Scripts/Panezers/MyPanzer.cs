@@ -36,7 +36,7 @@ public class MyPanzer : BasePanzer
             temp.GetComponent<BaseBonus>().GetBonus(gameObject);
             Destroy(temp);
         }
-        Debug.Log("Trigger!");
+      //  Debug.Log("Trigger!");
     }
     void KillSelf()
     {

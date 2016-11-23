@@ -17,6 +17,7 @@ public class Box : MonoBehaviour {
         //comment
         //comment EldarBranch
         //comment Eldar commit
+
         GameObject temp = item.gameObject;
         if (temp.tag == "Weapon")
         {
@@ -25,6 +26,6 @@ public class Box : MonoBehaviour {
             Destroy(temp);
         }
        
-        Debug.Log("Trigger!");
+       // Debug.Log("Trigger!");
     }
 }

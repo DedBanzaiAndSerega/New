@@ -18,7 +18,7 @@ public class Shooting : MonoBehaviour {
         if (Input.GetButton("Fire1") && coolDawnTimer <= 0)
         { 
             
-            Debug.Log("pew!");
+            //Debug.Log("pew!");
             coolDawnTimer = fireDelay;
             Vector3 offset = transform.rotation * new Vector3(0, 0.8f, 0);
            // bullet.GetComponent<MoveForward>().dmg = GetComponent<MyPanzer>().CurrentDamage;
