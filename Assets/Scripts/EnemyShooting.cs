@@ -19,7 +19,7 @@ public class EnemyShooting : MonoBehaviour {
         coolDawnTimer -= Time.deltaTime;
         if (coolDawnTimer <= 0)
         {
-            Debug.Log("pew!");
+           // Debug.Log("pew!");
             coolDawnTimer = fireDelay +Random.Range(0.25f, 0.99f);
             Vector3 offset = transform.rotation * new Vector3(0, 0.8f, 0);
             //bullet.GetComponent<MoveForward>().dmg = GetComponent<EnemyPanzer>().CurrentDamage;

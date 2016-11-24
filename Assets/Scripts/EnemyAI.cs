@@ -14,7 +14,7 @@ public class EnemyAI : MonoBehaviour {
         
 	if(player == null)
         {
-            GameObject go = GameObject.Find("Panzer");
+            GameObject go = GameObject.Find("NewPanzer");
             if (go != null)
             {
                 player = go.transform;

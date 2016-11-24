@@ -34,7 +34,7 @@ public class EnemyPanzer : BasePanzer {
         {
 
         }
-        Debug.Log("Trigger!");
+      //  Debug.Log("Trigger!");
     }
     void KillSelf()
     {

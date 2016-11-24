@@ -4,7 +4,6 @@ using System.Collections;
 public class MyPanzer : BasePanzer 
 {
     public GameObject expl;
-    private GameObject explBul;
    public MyPanzer() : base (1,5,5)
     {
 
@@ -26,7 +25,7 @@ public class MyPanzer : BasePanzer
         GameObject temp = item.gameObject;
         if (temp.tag == "Weapon")
         {
-            
+           
             ChangeHP(temp.GetComponent<MoveForward>().dmg);
             Instantiate(temp.GetComponent<MoveForward>().expl, temp.transform.position, temp.transform.rotation);
             Destroy(temp);
