@@ -14,10 +14,12 @@ public class EnemyAI : MonoBehaviour {
         
 	if(player == null)
         {
+            
             GameObject go = GameObject.Find("NewPanzer");
             if (go != null)
             {
                 player = go.transform;
+                
             }
             
         }
@@ -27,6 +29,7 @@ public class EnemyAI : MonoBehaviour {
             return;
         
         Vector3 dir = player.position - transform.position;
+        
         dir.Normalize();
         float zAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90;
         Quaternion desiredRot = Quaternion.Euler(0, 0, zAngle);

@@ -24,9 +24,9 @@ public class EnemyShooting : MonoBehaviour {
             Vector3 offset = transform.rotation * new Vector3(0, 0.8f, 0);
             //bullet.GetComponent<MoveForward>().dmg = GetComponent<EnemyPanzer>().CurrentDamage;
             GameObject BulletInstance = (GameObject)Instantiate(bullet, transform.position + offset, transform.rotation);
-            BulletInstance.GetComponent<MoveForward>().dmg = GetComponent<BasePanzer>().CurrentDamage;
+            BulletInstance.GetComponent<MoveForward>().dmg = GetComponentInParent<BasePanzer>().CurrentDamage;
             BulletInstance.layer = gameObject.layer;
-
+            
         }
     }
 }
